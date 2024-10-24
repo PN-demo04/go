@@ -6,6 +6,10 @@ on:
     branches:
       - "**"
   workflow_dispatch:
+  pull_request:
+    branches:
+      - master
+      - new-test-branch
 jobs:
   build:
     steps:
